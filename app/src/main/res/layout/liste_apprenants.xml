@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lA_textView_titre"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/titre"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/lA_spinner_promo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:padding="25sp" />
+
+        <Spinner
+            android:id="@+id/lA_spinner_session"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:padding="25sp" />
+
+        <Spinner
+            android:id="@+id/lA_spinner_skills"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:padding="25sp" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lA_listView_apprenants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
