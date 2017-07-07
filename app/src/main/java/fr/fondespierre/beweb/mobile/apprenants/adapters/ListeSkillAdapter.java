@@ -18,7 +18,7 @@ import org.json.JSONObject;
 import fr.fondespierre.beweb.mobile.apprenants.R;
 
 /**
- * Created by root on 06/07/17.
+ * Created by mathieu on 05/07/17.
  */
 
 public class ListeSkillAdapter extends ArrayAdapter {

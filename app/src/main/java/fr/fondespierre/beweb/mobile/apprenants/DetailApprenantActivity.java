@@ -36,6 +36,7 @@ public class DetailApprenantActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        // On affiche les layout skills et projet dans detail_apprenant
         ListView listeSkills = (ListView) findViewById(R.id.dA_listView_skills);
         ListView listeProjets = (ListView) findViewById(R.id.dA_listView_projets);
 

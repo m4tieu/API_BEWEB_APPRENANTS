@@ -1,25 +1,28 @@
 <resources>
+
+    <!-- Ici nous centralisons tous les textes, afin de les rappeler dans les layouts et surtout de faciliter la traduction d'une langue a une autre -->
+
     <string name="app_name">Apprenants</string>
     <string name="titre">Liste des Apprenants :</string>
     <string name="titre_skill">Skills :</string>
     <string name="titre_projet">Projets :</string>
     <string name="titre_formation">Formations :</string>
-    <string name="infosPerso">Infos Perso</string>
+    <string name="titre_infos">Informations Personelles</string>
     <string name="button">GO</string>
-    <string name="promoPrompt">Choisir une Promotion</string>
-    <string name="sessionPrompt">Choisir une Session</string>
-    <string name="skillPrompt">Choisir un Skill</string>
 
     <string-array name="listPromo">
         <item>Promo 1</item>
         <item>Promo 2</item>
     </string-array>
+
     <string-array name="listSession">
         <item>Session 1</item>
         <item>Session 2</item>
     </string-array>
+
     <string-array name="listSkill">
         <item>Skill 1</item>
         <item>Skill 2</item>
     </string-array>
+
 </resources>

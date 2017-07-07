@@ -8,7 +8,7 @@ import fr.fondespierre.beweb.mobile.apprenants.dal.enumerations.Status;
 import fr.fondespierre.beweb.mobile.apprenants.dal.enumerations.Ville;
 
 /**
- * Created by root on 05/07/17.
+ * Created by mathieu on 04/07/17.
  */
 
 public class Data {

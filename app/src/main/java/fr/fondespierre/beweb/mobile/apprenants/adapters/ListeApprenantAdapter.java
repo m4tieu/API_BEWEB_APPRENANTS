@@ -22,13 +22,16 @@ import fr.fondespierre.beweb.mobile.apprenants.R;
 import fr.fondespierre.beweb.mobile.apprenants.dal.Data;
 
 /**
- * Created by root on 05/07/17.
+ * Created by mathieu on 05/07/17.
  */
 
 public class ListeApprenantAdapter extends ArrayAdapter {
 
 
     private final Activity act;
+
+    // On indique le layout qui affiche l'objet
+
     private final int resource = R.layout.liste_apprenants_item;
     private final JSONArray apprenants;
 
@@ -45,12 +48,15 @@ public class ListeApprenantAdapter extends ArrayAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         final int index = position;
+        // L'objet inflater construit tous les elements contenue dans le layout pour retourner l'objet a la position specifié
         LayoutInflater inflater = act.getLayoutInflater();
         convertView = inflater.inflate(resource,null);
 
+        // Attribue les textes au layout en fonction de leurs id
         TextView firstName = (TextView)convertView.findViewById(R.id.lAItem_textView_nom);
         TextView lastName = (TextView)convertView.findViewById(R.id.lAItem_textView_prenom);
 
+        // Attribue au layout en fonction de l'id l'evenement au click du bouton
         ImageView detail = (ImageView)convertView.findViewById(R.id.lAItem_button_detail);
         detail.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -70,13 +76,10 @@ public class ListeApprenantAdapter extends ArrayAdapter {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-        /*TextView mainSkill = (TextView)convertView.findViewById(R.id.laItem_textView_skill);
-        firstName.setText(.optString("skill"));*/
-
         return convertView;
     }
 
+    // On retourne les apprenants tant qu'il y en a
     @Override
     public int getCount() {
         return apprenants.length();

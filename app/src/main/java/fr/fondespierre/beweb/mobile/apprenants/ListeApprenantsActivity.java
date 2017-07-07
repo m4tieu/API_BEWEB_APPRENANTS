@@ -35,11 +35,13 @@ public class ListeApprenantsActivity extends AppCompatActivity {
         final Activity activity = this;
 
 
-        // Instantiate the RequestQueue.
+        // Instantie la requestQueue.
+
         RequestQueue queue = Volley.newRequestQueue(this);
         String url ="http://192.168.1.48/beweb_api/index.php/";
 
-        // Request a string response from the provided URL.
+        // Demande une reponse sous forme d'une chaine de caracteres a partir de l'URL.
+
         JsonArrayRequest jaRequest = new JsonArrayRequest(Request.Method.GET, url+"apprenants",listeData,
                 new Response.Listener<JSONArray>() {
                     @Override
@@ -55,7 +57,9 @@ public class ListeApprenantsActivity extends AppCompatActivity {
 
             }
         });
-        // Add the request to the RequestQueue.
+
+        // On ajoute la requete a la requestQueue
+
         queue.add(jaRequest);
     }
 }
